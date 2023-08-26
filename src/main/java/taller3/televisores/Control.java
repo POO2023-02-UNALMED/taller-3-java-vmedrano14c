@@ -2,65 +2,49 @@ package taller3.televisores;
 
 public class Control {
 private TV tv;
+private Control control;
 	
-	public void enlazar(TV tv) {
+	public void enlazar(TV tv, Control control) {
 		this.tv = tv;
-		tv.enlazarControl(this);
+		tv.setControl(control);
 	}
-	
-	public void turnOn() {
-		if (tv != null) {
-			tv.turnOn();
-		}
-	}
-	
-	public void turnOff() {
-		if (tv != null) {
-			tv.turnOff();
-		}
-	}
-	
-	public void canalUp() {
-		if (tv != null) {
-			tv.canalUp();
-		}	
-	}
-	
-	public void canalDown() {
-		if (tv != null) {
-			tv.canalDown();
-		}
-	}
-	
-	public void volumenUp() {
-		if (tv != null) {
-			tv.volumenUp();
-		}
-	}
-	
-	public void volumenDown() {
-		if (tv != null) {
-			tv.volumenDown();
-		}
-	}
-	
-	public void setCanal(int canal) {
-		if (tv != null) {
-			tv.setCanal(canal);
-		}
-	}
-	
-	public void setVolumen(int volumen) {
-		if (tv != null) {
-			tv.setVolumen(volumen);
-		}
+	public void setTV(TV tv) {
+		this.tv = tv;
 	}
 	
 	public TV getTv() {
 		return tv;
 	}
 	
-	public void setTv(TV tv) {
-		this.tv = tv;
+	public void turnOn() {
+		this.tv.turnOn();
 	}
+	
+	public void turnOff() {
+		this.tv.turnOff();
+	}
+	
+	public void canalUp() {
+		this.tv.canalUp();	
+	}
+	
+	public void canalDown() {
+		this.tv.canalDown();
+	}
+	
+	public void volumenUp() {
+		this.tv.volumenUp();
+	}
+	
+	public void volumenDown() {
+		this.tv.volumenDown();
+	}
+	
+	public void setCanal(int canal) {
+		this.tv.setCanal(canal);
+	}
+	
+	public void setVolumen(int volumen) {
+		this.tv.setVolumen(volumen);
+	}	
 }
