@@ -90,6 +90,7 @@ public class TV {
 		}
 	}
 	
+	
 	public static int getNumTV() {
 		return numTV;
 	}
@@ -102,4 +103,3 @@ public class TV {
 		return control;
 	}
 }
-
