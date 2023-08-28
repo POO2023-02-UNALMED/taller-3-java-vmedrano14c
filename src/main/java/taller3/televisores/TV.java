@@ -99,7 +99,7 @@ public class TV {
 		TV.numTV = numTV;
 	}
 	
-	public void enlazarControl(Control control) {
+	public void setControl(Control control) {
 		this.control = control;
 	}
 	
