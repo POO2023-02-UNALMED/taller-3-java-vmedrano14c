@@ -92,14 +92,14 @@ public class TV {
 	
 	
 	public static int getNumTV() {
-		return TV.numTV;
+		return numTV;
 	}
 	
 	public static void setNumTV(int numTV) {
 		TV.numTV = numTV;
 	}
 	
-	public void setControl(Control control) {
+	public void enlazarControl(Control control) {
 		this.control = control;
 	}
 	
